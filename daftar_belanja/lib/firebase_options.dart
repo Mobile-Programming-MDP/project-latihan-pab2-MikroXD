@@ -23,11 +23,20 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -41,54 +50,22 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDWcaj21FdRZebqGpmOEQP-hQNlpg6s_Us',
-    appId: '1:102193542944:web:97ba5aa97e6f6011438945',
-    messagingSenderId: '102193542944',
-    projectId: 'first-app-cfbf7',
-    authDomain: 'first-app-cfbf7.firebaseapp.com',
-    databaseURL: 'https://first-app-cfbf7-default-rtdb.firebaseio.com',
-    storageBucket: 'first-app-cfbf7.firebasestorage.app',
-    measurementId: 'G-WBW6LF1TPD',
+    apiKey: 'AIzaSyA0ts5BEW8p5v7FcQPzc8Aq8rsUNldUOcI',
+    appId: '1:258781372323:web:4dd6c74bf7d2e1838ac416',
+    messagingSenderId: '258781372323',
+    projectId: 'first-app-88b1b',
+    authDomain: 'first-app-88b1b.firebaseapp.com',
+    databaseURL: 'https://first-app-88b1b-default-rtdb.firebaseio.com',
+    storageBucket: 'first-app-88b1b.firebasestorage.app',
+    measurementId: 'G-T1V8WGVEGT',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDydcq-5o3xojNKSwB0s89F-t0UXVnTOrQ',
-    appId: '1:102193542944:android:0a9a40f23cd22f21438945',
-    messagingSenderId: '102193542944',
-    projectId: 'first-app-cfbf7',
-    databaseURL: 'https://first-app-cfbf7-default-rtdb.firebaseio.com',
-    storageBucket: 'first-app-cfbf7.firebasestorage.app',
+    apiKey: 'AIzaSyA06Mdtfm8_WK_aMi419gGf9IuBq1Ksar4',
+    appId: '1:258781372323:android:74f49f0d3972062b8ac416',
+    messagingSenderId: '258781372323',
+    projectId: 'first-app-88b1b',
+    databaseURL: 'https://first-app-88b1b-default-rtdb.firebaseio.com',
+    storageBucket: 'first-app-88b1b.firebasestorage.app',
   );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyADyflmf4q_JJ2ktrMFiPCPUMRAE00YRSk',
-    appId: '1:102193542944:ios:1c0084dd60ef6823438945',
-    messagingSenderId: '102193542944',
-    projectId: 'first-app-cfbf7',
-    databaseURL: 'https://first-app-cfbf7-default-rtdb.firebaseio.com',
-    storageBucket: 'first-app-cfbf7.firebasestorage.app',
-    iosBundleId: 'com.example.daftarBelanja',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyADyflmf4q_JJ2ktrMFiPCPUMRAE00YRSk',
-    appId: '1:102193542944:ios:1c0084dd60ef6823438945',
-    messagingSenderId: '102193542944',
-    projectId: 'first-app-cfbf7',
-    databaseURL: 'https://first-app-cfbf7-default-rtdb.firebaseio.com',
-    storageBucket: 'first-app-cfbf7.firebasestorage.app',
-    iosBundleId: 'com.example.daftarBelanja',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDWcaj21FdRZebqGpmOEQP-hQNlpg6s_Us',
-    appId: '1:102193542944:web:789b36de61bd3086438945',
-    messagingSenderId: '102193542944',
-    projectId: 'first-app-cfbf7',
-    authDomain: 'first-app-cfbf7.firebaseapp.com',
-    databaseURL: 'https://first-app-cfbf7-default-rtdb.firebaseio.com',
-    storageBucket: 'first-app-cfbf7.firebasestorage.app',
-    measurementId: 'G-7DPXPPX9BK',
-  );
-
 }
