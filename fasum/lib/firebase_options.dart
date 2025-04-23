@@ -33,10 +33,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,19 +47,34 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDBT6ZRdIua24sPaMiB_izTeRix9zCxfig',
-    appId: '1:737715652352:web:3d91ad4590258c7f3f95e5',
-    messagingSenderId: '737715652352',
-    projectId: 'fasum-apps-123',
-    authDomain: 'fasum-apps-123.firebaseapp.com',
-    storageBucket: 'fasum-apps-123.firebasestorage.app',
+    apiKey: 'AIzaSyDWcaj21FdRZebqGpmOEQP-hQNlpg6s_Us',
+    appId: '1:102193542944:web:789b36de61bd3086438945',
+    messagingSenderId: '102193542944',
+    projectId: 'first-app-cfbf7',
+    authDomain: 'first-app-cfbf7.firebaseapp.com',
+    databaseURL: 'https://first-app-cfbf7-default-rtdb.firebaseio.com',
+    storageBucket: 'first-app-cfbf7.firebasestorage.app',
+    measurementId: 'G-7DPXPPX9BK',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCIK_FCHLiV6CCkZtXkXE1Yo0NyXuDqCiY',
-    appId: '1:737715652352:android:6b20f5aa9b21d4b13f95e5',
-    messagingSenderId: '737715652352',
-    projectId: 'fasum-apps-123',
-    storageBucket: 'fasum-apps-123.firebasestorage.app',
+    apiKey: 'AIzaSyDydcq-5o3xojNKSwB0s89F-t0UXVnTOrQ',
+    appId: '1:102193542944:android:968ba25f8dfd6554438945',
+    messagingSenderId: '102193542944',
+    projectId: 'first-app-cfbf7',
+    databaseURL: 'https://first-app-cfbf7-default-rtdb.firebaseio.com',
+    storageBucket: 'first-app-cfbf7.firebasestorage.app',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDWcaj21FdRZebqGpmOEQP-hQNlpg6s_Us',
+    appId: '1:102193542944:web:6cdf3fd0347332b7438945',
+    messagingSenderId: '102193542944',
+    projectId: 'first-app-cfbf7',
+    authDomain: 'first-app-cfbf7.firebaseapp.com',
+    databaseURL: 'https://first-app-cfbf7-default-rtdb.firebaseio.com',
+    storageBucket: 'first-app-cfbf7.firebasestorage.app',
+    measurementId: 'G-Y4YWB4STJ1',
+  );
+
 }
