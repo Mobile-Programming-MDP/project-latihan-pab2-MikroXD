@@ -48,13 +48,13 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyDWcaj21FdRZebqGpmOEQP-hQNlpg6s_Us',
-    appId: '1:102193542944:web:789b36de61bd3086438945',
+    appId: '1:102193542944:web:6cdf3fd0347332b7438945',
     messagingSenderId: '102193542944',
     projectId: 'first-app-cfbf7',
     authDomain: 'first-app-cfbf7.firebaseapp.com',
     databaseURL: 'https://first-app-cfbf7-default-rtdb.firebaseio.com',
     storageBucket: 'first-app-cfbf7.firebasestorage.app',
-    measurementId: 'G-7DPXPPX9BK',
+    measurementId: 'G-Y4YWB4STJ1',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
