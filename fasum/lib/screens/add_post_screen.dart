@@ -223,7 +223,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
 
   Future<void> sendNotificationToTopic(String body, String senderName) async {
     final url = Uri.parse(
-        'https://fasumcloud-sooty.vercel.app/'); //ganti dengan url vercel masing-masing
+        'https://fasumcloud-sooty.vercel.app/send-to-topic'); //ganti dengan url vercel masing-masing
     final response = await http.post(
       url,
       headers: {
